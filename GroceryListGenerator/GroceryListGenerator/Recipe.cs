@@ -8,22 +8,15 @@ namespace GroceryListGenerator
 {
     abstract class Recipe
     {
-        public long Id { get; private set; }
+        public long Id { get; set; }
         public string Name { get; set; }
         public RecipeMetadata Metadata { get; set; }
         
-        public List<Ingredient> Ingredients { get; private set; }
+        public List<Ingredient> Ingredients { get; set; }
 
-        public Recipe(string name, long id)
+        public Recipe(string name, List<Ingredient> ingredients)
         {
             Name = name;
-            Id = id;
-            Ingredients = new List<Ingredient>();
-        }
-        public Recipe(string name, long id, List<Ingredient> ingredients)
-        {
-            Name = name;
-            Id = id;
             Ingredients = ingredients;
         }
 
