@@ -10,24 +10,13 @@ namespace GroceryListGenerator
     {
         public string Name { get; set; }
         public double Quantity { get; set; }
-        public MeasurementType Measurement { get; set; }
+        public string Measurement { get; set; }
 
-        public Ingredient(string name, double quantity, MeasurementType measurement)
+        public Ingredient(string name, double quantity, string measurement)
         {
             Name = name;
             Quantity = quantity;
             Measurement = measurement;
-        }
-
-        public enum MeasurementType
-        {
-            Pound,
-            Ounce,
-            Tablespoon,
-            Teaspoon,
-            Gram,
-            Cup,
-            Pinch
         }
     }
 }

@@ -6,16 +6,25 @@ using System.Threading.Tasks;
 
 namespace GroceryListGenerator
 {
-    class Meal
+    abstract class Recipe
     {
+        public long Id { get; private set; }
         public string Name { get; set; }
-        public DifficultyCategory Difficulty { get; private set; }
+        public RecipeMetadata Metadata { get; set; }
+        
         public List<Ingredient> Ingredients { get; private set; }
 
-        public Meal(string name, DifficultyCategory difficulty)
+        public Recipe(string name, long id)
         {
             Name = name;
-            Difficulty = difficulty;
+            Id = id;
+            Ingredients = new List<Ingredient>();
+        }
+        public Recipe(string name, long id, List<Ingredient> ingredients)
+        {
+            Name = name;
+            Id = id;
+            Ingredients = ingredients;
         }
 
         public void AddIngredient(Ingredient ingredient)
@@ -23,21 +32,9 @@ namespace GroceryListGenerator
             Ingredients.Add(ingredient);
         }
 
-        public void RemoveIngredient (Ingredient ingredient)
+        public void RemoveIngredient(Ingredient ingredient)
         {
             Ingredients.Remove(ingredient);
-        }
-
-        public void SetDifficulty(DifficultyCategory difficulty)
-        {
-            Difficulty = difficulty;
-        }
-
-        public enum DifficultyCategory
-        {
-            Easy,
-            Medium,
-            Hard
         }
     }
 }
