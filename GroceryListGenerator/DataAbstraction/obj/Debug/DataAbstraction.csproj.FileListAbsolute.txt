@@ -1,0 +1,2 @@
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.csprojAssemblyReference.cache
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.csproj.CoreCompileInputs.cache

@@ -1,0 +1,7 @@
+D:\Source\GroceryListGenerator\GroceryListGenerator\GroceryListGenerator\bin\Debug\GroceryListGenerator.exe.config
+D:\Source\GroceryListGenerator\GroceryListGenerator\GroceryListGenerator\bin\Debug\GroceryListGenerator.exe
+D:\Source\GroceryListGenerator\GroceryListGenerator\GroceryListGenerator\bin\Debug\GroceryListGenerator.pdb
+D:\Source\GroceryListGenerator\GroceryListGenerator\GroceryListGenerator\obj\Debug\GroceryListGenerator.csprojAssemblyReference.cache
+D:\Source\GroceryListGenerator\GroceryListGenerator\GroceryListGenerator\obj\Debug\GroceryListGenerator.csproj.CoreCompileInputs.cache
+D:\Source\GroceryListGenerator\GroceryListGenerator\GroceryListGenerator\obj\Debug\GroceryListGenerator.exe
+D:\Source\GroceryListGenerator\GroceryListGenerator\GroceryListGenerator\obj\Debug\GroceryListGenerator.pdb
