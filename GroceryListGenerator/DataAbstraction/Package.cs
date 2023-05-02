@@ -7,12 +7,39 @@ using System.Threading.Tasks;
 
 namespace DataAbstraction
 {
-    public abstract class Package
+    public static class Package
     {
-        public void SaveData(List<Recipe> recipes)
+        public static void SaveRecipes(List<Recipe> recipes)
         {
 
         }
 
+        public static List<Recipe> GetRecipes(string id)
+        {
+            List<Recipe> results = new List<Recipe>();
+
+            results = TestRecipes();
+                        
+            return results;
+        }
+
+        private static List<Recipe> TestRecipes()
+        {
+            List<Recipe> results = new List<Recipe>();
+
+            List<Ingredient> ingredientsA = new List<Ingredient>();
+            Ingredient aFirst = new Ingredient("pasta", 3.5, "oz");
+            Ingredient aSecond = new Ingredient("Sauce", 8.0, "oz");
+            ingredientsA.Add(aFirst);
+            ingredientsA.Add(aSecond);
+            Meal a = new Meal("Spaghetti", ingredientsA);
+            results.Add(a);
+
+            Ingredient bFirst = new Ingredient("Chips", 1.0, "bag");
+            Snack b = new Snack("Chips", new List<Ingredient> {bFirst});
+            results.Add(b);
+
+            return results;
+        }
     }
 }

@@ -1,2 +1,11 @@
-D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.csprojAssemblyReference.cache
 D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.csproj.CoreCompileInputs.cache
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\bin\Debug\DataAbstraction.exe.config
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\bin\Debug\DataAbstraction.exe
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\bin\Debug\DataAbstraction.pdb
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\bin\Debug\GroceryListGenerator.exe
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\bin\Debug\GroceryListGenerator.pdb
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\bin\Debug\GroceryListGenerator.exe.config
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.csproj.AssemblyReference.cache
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.csproj.CopyComplete
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.exe
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.pdb
