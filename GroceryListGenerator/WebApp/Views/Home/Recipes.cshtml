@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Recipes";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table style="width:75%; align-self: center">
+    @foreach (var m in ViewBag.Ingredients)
+    {
+        <tr class="recipename">
+            <td>@m.Name</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        @foreach (var i in m.Ingredients)
+        {
+            <tr>
+                <td></td>
+                <td>@i.Name</td>
+                <td>@i.Quantity</td>
+                <td>@i.Measurement</td>
+            </tr>
+        }
+    }
+</table>

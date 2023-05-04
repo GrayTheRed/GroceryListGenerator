@@ -25,13 +25,17 @@ namespace WebApp.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.Ingredients = Package.GetRecipes(User.Identity.Name);
             return View();
         }
 
         public IActionResult Privacy()
         {
-            
+            return View();
+        }
+
+        public IActionResult Recipes()
+        {
+            ViewBag.Ingredients = Package.GetRecipes(User.Identity.Name);
             return View();
         }
 
