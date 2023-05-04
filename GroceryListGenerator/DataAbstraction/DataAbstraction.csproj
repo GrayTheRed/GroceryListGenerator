@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F275C7CE-4D20-4F4D-981F-E3E14EF353A7}</ProjectGuid>
+    <ProjectGuid>{5B793CE3-A453-4543-BBC2-035BCEEC11D1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GroceryListGenerator</RootNamespace>
-    <AssemblyName>GroceryListGenerator</AssemblyName>
+    <RootNamespace>DataAbstraction</RootNamespace>
+    <AssemblyName>DataAbstraction</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,17 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ingredient.cs" />
-    <Compile Include="IRecipeMetadata.cs" />
-    <Compile Include="Meal.cs" />
+    <Compile Include="Package.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Recipe.cs" />
-    <Compile Include="RecipeMetadata.cs" />
-    <Compile Include="Snack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GroceryListGenerator\GroceryListGenerator.csproj">
+      <Project>{f275c7ce-4d20-4f4d-981f-e3e14ef353a7}</Project>
+      <Name>GroceryListGenerator</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

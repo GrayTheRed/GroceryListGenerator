@@ -1,0 +1,123 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\WebApp\\WebApp.csproj": {}
+  },
+  "projects": {
+    "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\DataAbstraction\\DataAbstraction.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\DataAbstraction\\DataAbstraction.csproj",
+        "projectName": "DataAbstraction",
+        "projectPath": "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\DataAbstraction\\DataAbstraction.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\GroceryListGenerator\\GroceryListGenerator.csproj": {
+                "projectPath": "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\GroceryListGenerator\\GroceryListGenerator.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\GroceryListGenerator\\GroceryListGenerator.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\GroceryListGenerator\\GroceryListGenerator.csproj",
+        "projectName": "GroceryListGenerator",
+        "projectPath": "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\GroceryListGenerator\\GroceryListGenerator.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\WebApp\\WebApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\WebApp\\WebApp.csproj",
+        "projectName": "WebApp",
+        "projectPath": "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\WebApp\\WebApp.csproj",
+        "packagesPath": "C:\\Users\\jdgra\\.nuget\\packages\\",
+        "outputPath": "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\WebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jdgra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\DataAbstraction\\DataAbstraction.csproj": {
+                "projectPath": "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\DataAbstraction\\DataAbstraction.csproj"
+              },
+              "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\GroceryListGenerator\\GroceryListGenerator.csproj": {
+                "projectPath": "D:\\Source\\GroceryListGenerator\\GroceryListGenerator\\GroceryListGenerator\\GroceryListGenerator.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.AzureAD.UI": {
+              "target": "Package",
+              "version": "[3.1.31, )"
+            },
+            "Microsoft.Identity.Web": {
+              "target": "Package",
+              "version": "[1.10.0, )"
+            },
+            "Microsoft.Identity.Web.UI": {
+              "target": "Package",
+              "version": "[1.10.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GroceryListGenerator
 {
-    class RecipeMetadata : IRecipeMetadata
+    public class RecipeMetadata : IRecipeMetadata
     {
         public int Difficulty { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public double PrepTimeMinutes { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

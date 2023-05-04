@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GroceryListGenerator
 {
-    class Snack : Recipe
+    public class Snack : Recipe
     {
         public Snack(string name, List<Ingredient> ingredients) : base (name, ingredients)
         {
