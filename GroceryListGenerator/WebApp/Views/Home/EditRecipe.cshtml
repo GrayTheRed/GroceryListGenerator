@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Edit Recipe";
+}
+@model GroceryListGenerator.Recipe
+
+<h1>EditRecipe</h1>
+
+<body>
+    <p>
+        @Html.Label("Recipe Name") <br />
+        @Html.TextBoxFor(m => m.Name, new {@class = "form-control"})
+    </p>
+
+</body>
+

@@ -4,6 +4,8 @@
 
 <h1>@ViewData["Title"]</h1>
 
+
+
 <table style="width:75%; align-self: center">
     @foreach (var m in ViewBag.Ingredients)
     {
@@ -11,7 +13,7 @@
             <td>@m.Name</td>
             <td></td>
             <td></td>
-            <td></td>
+            <td><a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="EditRecipe">Edit</a></td>
         </tr>
 
         @foreach (var i in m.Ingredients)
@@ -25,3 +27,7 @@
         }
     }
 </table>
+
+<div style="display: none">
+
+</div>
