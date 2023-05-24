@@ -21,6 +21,11 @@ namespace DataAbstraction
             return results;
         }
 
+        //public static string GetRecipesCosmos(string id)
+        //{
+        //    string queryText = "SELECT * FROM recipes WHERE "
+        //}
+
         private static List<Recipe> TestRecipes()
         {
             List<Recipe> results = new List<Recipe>();
