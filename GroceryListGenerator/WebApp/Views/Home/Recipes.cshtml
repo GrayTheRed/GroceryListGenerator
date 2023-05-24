@@ -1,13 +1,29 @@
 ﻿@{
     ViewData["Title"] = "Recipes";
+
+    <script type="text/javascript" language="javascript">
+        function showAdd() {
+            var add = document.getElementById('new');
+            add.style.display = "block";
+        }
+
+        var ind = 0;
+        function addIngredient() {
+            var doc = document.getElementById('recipeTable');
+            doc.innerHTML += `<tr><td><input type="text" name="Ingredients[` + ind + `].Name"></td><td><input type="text" name="Ingredients[` + ind + `].Quantity")</td><td><input type="text" name="Ingredients[` + ind + `].Measurement"</td></tr>`;
+            ind++;
+        }
+    </script>
 }
+
+@model List<GroceryListGenerator.Meal>
 
 <h1>@ViewData["Title"]</h1>
 
 
 
 <table style="width:75%; align-self: center">
-    @foreach (var m in ViewBag.Ingredients)
+    @foreach (var m in Model)
     {
         <tr class="recipename">
             <td>@m.Name</td>
@@ -28,6 +44,24 @@
     }
 </table>
 
-<div style="display: none">
+<br />
 
+<button type="button" onclick="showAdd()">Add Recipe</button>
+
+<div id="new" style="display: none">
+    @using (Html.BeginForm("Recipes", "Home", FormMethod.Post))
+    {
+        @Html.Label("Recipe Name") @Html.TextBoxFor(m => m[0].Name)<br />
+        @Html.Label("Ingredients")<br />
+        <table id="recipeTable">
+            <tr class="recipename">
+                <td>Name</td>
+                <td>Quantity</td>
+                <td>Measurement</td>
+                <td><button type="button" onclick="addIngredient()">Add Ingredient</button> </td>
+            </tr>
+        </table>
+        <input id="Submit" type="submit" value="submit" />
+    }
 </div>
+

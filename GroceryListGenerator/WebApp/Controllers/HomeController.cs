@@ -40,8 +40,8 @@ namespace WebApp.Controllers
 
         public IActionResult Recipes()
         {
-            ViewBag.Ingredients = Package.GetRecipes(User.Identity.Name);
-            return View();
+            List<GroceryListGenerator.Meal> myList = Package.GetRecipes(User.Identity.Name);
+            return View(myList);
         }
 
         [HttpPost]
@@ -49,8 +49,7 @@ namespace WebApp.Controllers
         {
             List<GroceryListGenerator.Meal> recipes = new List<GroceryListGenerator.Meal>();
             recipes.Add(recipe);
-            ViewBag.Ingredients = recipes;
-            return View();
+            return View(recipes);
         }
 
         public IActionResult EditRecipe()
