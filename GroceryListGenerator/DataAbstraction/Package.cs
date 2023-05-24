@@ -1,9 +1,7 @@
 ﻿using GroceryListGenerator;
-using System;
+using Microsoft.Azure.Cosmos;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace DataAbstraction
 {
