@@ -12,23 +12,27 @@ namespace DataAbstraction
 
         }
 
-        public static List<Recipe> GetRecipes(string id)
+        public static List<Meal> GetRecipes(string id)
         {
-            List<Recipe> results = new List<Recipe>();
+            List<Meal> results = new List<Meal>();
 
             results = TestRecipes();
                         
             return results;
         }
 
+<<<<<<< HEAD
         //public static string GetRecipesCosmos(string id)
         //{
         //    string queryText = "SELECT * FROM recipes WHERE "
         //}
 
         private static List<Recipe> TestRecipes()
+=======
+        private static List<Meal> TestRecipes()
+>>>>>>> main
         {
-            List<Recipe> results = new List<Recipe>();
+            List<Meal> results = new List<Meal>();
 
             List<Ingredient> ingredientsA = new List<Ingredient>();
             Ingredient aFirst = new Ingredient("pasta", 3.5, "oz");
@@ -37,10 +41,6 @@ namespace DataAbstraction
             ingredientsA.Add(aSecond);
             Meal a = new Meal("Spaghetti", ingredientsA);
             results.Add(a);
-
-            Ingredient bFirst = new Ingredient("Chips", 1.0, "bag");
-            Snack b = new Snack("Chips", new List<Ingredient> {bFirst});
-            results.Add(b);
 
             return results;
         }

@@ -18,5 +18,10 @@ namespace GroceryListGenerator
             Quantity = quantity;
             Measurement = measurement;
         }
+
+        public Ingredient()
+        {
+
+        }
     }
 }

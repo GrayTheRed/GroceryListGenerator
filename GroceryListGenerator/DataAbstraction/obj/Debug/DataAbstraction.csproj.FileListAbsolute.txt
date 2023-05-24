@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.csproj.AssemblyReference.cache
 D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.csproj.CoreCompileInputs.cache
 D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\bin\Debug\Microsoft.Azure.Cosmos.ServiceInterop.dll
@@ -56,4 +57,16 @@ D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\bin\Debug\Sy
 D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\bin\Debug\System.ValueTuple.xml
 D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.csproj.CopyComplete
 D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.exe
+=======
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\bin\Debug\DataAbstraction.dll.config
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\bin\Debug\DataAbstraction.dll
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\bin\Debug\DataAbstraction.pdb
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\bin\Debug\GroceryListGenerator.dll
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\bin\Debug\GroceryListGenerator.pdb
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\bin\Debug\GroceryListGenerator.dll.config
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.csproj.AssemblyReference.cache
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.csproj.CoreCompileInputs.cache
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.csproj.CopyComplete
+D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.dll
+>>>>>>> main
 D:\Source\GroceryListGenerator\GroceryListGenerator\DataAbstraction\obj\Debug\DataAbstraction.pdb

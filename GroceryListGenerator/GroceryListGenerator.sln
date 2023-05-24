@@ -7,7 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceryListGenerator", "Gro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAbstraction", "DataAbstraction\DataAbstraction.csproj", "{5B793CE3-A453-4543-BBC2-035BCEEC11D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{8B9A1A26-F2F9-45C6-83C9-E7D5F28D8F31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{8B9A1A26-F2F9-45C6-83C9-E7D5F28D8F31}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F275C7CE-4D20-4F4D-981F-E3E14EF353A7} = {F275C7CE-4D20-4F4D-981F-E3E14EF353A7}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
