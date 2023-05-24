@@ -13,5 +13,9 @@ namespace GroceryListGenerator
             Name = name;
             Ingredients = ingredients;
         }
+        public Meal()
+        {
+
+        }
     }
 }

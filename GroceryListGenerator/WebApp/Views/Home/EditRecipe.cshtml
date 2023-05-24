@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Edit Recipe";
+}
+@model GroceryListGenerator.Meal
+
+<h1>EditRecipe</h1>
+<body>
+
+    @using (Html.BeginForm("Recipes", "Home", FormMethod.Post))
+    {
+        @Html.Label("Recipe Name") @Html.TextBoxFor(m => m.Name)<br />
+        @Html.Label("Ingredients")<br />
+        <table id="recipeTable">
+            <tr class="recipename">
+                <td>Name</td>
+                <td>Quantity</td>
+                <td>Measurement</td>
+            </tr>
+            <tr>
+                <td>@Html.TextBoxFor(m => m.Ingredients[0].Name)</td>
+                <td>@Html.TextBoxFor(m => m.Ingredients[0].Quantity)</td>
+                <td>@Html.TextBoxFor(m => m.Ingredients[0].Measurement)</td>
+            </tr>
+            <tr></tr>
+        </table>
+
+        <input id="Submit" type="submit" value="submit" />
+    }
+
+
+</body>
+

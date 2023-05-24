@@ -19,6 +19,11 @@ namespace GroceryListGenerator
             Ingredients = ingredients;
         }
 
+        public Recipe()
+        {
+
+        }
+
         public void AddIngredient(Ingredient ingredient)
         {
             Ingredients.Add(ingredient);
