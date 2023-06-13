@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace DataAbstraction
 {
-    public static class Package
+    public class Package
     {
-        public static void SaveRecipes(List<Recipe> recipes)
+        public void SaveRecipes(List<Recipe> recipes)
         {
 
         }
 
-        public static List<Meal> GetRecipes(string id)
+        public List<Meal> GetRecipes(string id)
         {
             List<Meal> results = new List<Meal>();
 
@@ -23,7 +23,7 @@ namespace DataAbstraction
             return results;
         }
 
-        private static List<Meal> TestRecipes()
+        private List<Meal> TestRecipes()
         {
             List<Meal> results = new List<Meal>();
 
