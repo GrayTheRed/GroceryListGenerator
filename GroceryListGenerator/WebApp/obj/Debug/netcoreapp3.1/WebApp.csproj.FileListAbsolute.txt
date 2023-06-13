@@ -48,30 +48,17 @@ D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-<<<<<<< HEAD
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\DataAbstraction.exe
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\GroceryListGenerator.exe
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\DataAbstraction.pdb
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\DataAbstraction.exe.config
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\GroceryListGenerator.pdb
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\GroceryListGenerator.exe.config
-=======
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\DataAbstraction.dll
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\GroceryListGenerator.dll
-D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\DataAbstraction.pdb
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\DataAbstraction.dll.config
-D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\GroceryListGenerator.pdb
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\GroceryListGenerator.dll.config
-D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\WebApp.csproj.AssemblyReference.cache
-D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\WebApp.GeneratedMSBuildEditorConfig.editorconfig
-D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\WebApp.AssemblyInfoInputs.cache
-D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\WebApp.AssemblyInfo.cs
-D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\WebApp.csproj.CoreCompileInputs.cache
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\WebApp.MvcApplicationPartsAssemblyInfo.cs
-D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\WebApp.MvcApplicationPartsAssemblyInfo.cache
-D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\WebApp.RazorAssemblyInfo.cache
-D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\WebApp.RazorAssemblyInfo.cs
->>>>>>> main
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\staticwebassets\WebApp.StaticWebAssets.Manifest.cache
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\staticwebassets\WebApp.StaticWebAssets.xml
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\scopedcss\bundle\WebApp.styles.css
@@ -93,8 +80,6 @@ D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\WebApp.dll
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\WebApp.pdb
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\WebApp.genruntimeconfig.cache
-<<<<<<< HEAD
-=======
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Recipes.cshtml.g.cs
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
@@ -169,4 +154,3 @@ D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Source\GroceryListGenerator\GroceryListGenerator\WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\EditRecipe.cshtml.g.cs
->>>>>>> main

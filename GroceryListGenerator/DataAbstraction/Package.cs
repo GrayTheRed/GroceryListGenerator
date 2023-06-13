@@ -1,36 +1,53 @@
 ﻿using GroceryListGenerator;
 using Microsoft.Azure.Cosmos;
 using System.Collections.Generic;
-
+using System.Configuration;
+using System.Threading.Tasks;
 
 namespace DataAbstraction
 {
-    public static class Package
+    public class Package
     {
-        public static void SaveRecipes(List<Recipe> recipes)
+        private readonly string EndpointUri = ConfigurationManager.AppSettings["EndPointUri"];
+        private readonly string PrimaryKey = ConfigurationManager.AppSettings["PrimaryKey"];
+        //private  CosmosClient cosmosClient = new CosmosClient(EndpointUri, PrimaryKey, new CosmosClientOptions() { ApplicationName = "GroceryListGenerator" });
+
+        public void SaveRecipes(List<Recipe> recipes)
         {
 
         }
 
-        public static List<Meal> GetRecipes(string id)
+        public List<Meal> GetRecipes(string id)
         {
             List<Meal> results = new List<Meal>();
-
+            //results = await GetRecipesCosmos(id);
             results = TestRecipes();
                         
             return results;
         }
 
-<<<<<<< HEAD
-        //public static string GetRecipesCosmos(string id)
+        //public async Task GetRecipesCosmos(string id)
         //{
-        //    string queryText = "SELECT * FROM recipes WHERE "
+        //    List<Meal> results = new List<Meal>();
+        //    string endpointUri = ConfigurationManager.AppSettings["EndPointUri"];
+        //    string primaryKey = ConfigurationManager.AppSettings["PrimaryKey"];
+        //    //var db = cosmosClient.GetDatabase("GroceryList");
+        //    //var container = cosmosClient.GetContainer(db.Id, "Recipes");
+        //    string query = ($"SELECT * FROM c WHERE c.user =\'{id}\'");
+        //    QueryDefinition queryDef = new QueryDefinition(query);
+        //    FeedIterator<Meal> queryResultSetIterator = container.GetItemQueryIterator<Meal>(queryDef);
+
+        //    while (queryResultSetIterator.HasMoreResults)
+        //    {
+        //        FeedResponse<Meal> currentResultSet = await queryResultSetIterator.ReadNextAsync();
+        //        foreach(Meal r in currentResultSet)
+        //        {
+        //            results.Add(r);
+        //        }
+        //    }
         //}
 
-        private static List<Recipe> TestRecipes()
-=======
-        private static List<Meal> TestRecipes()
->>>>>>> main
+        private  List<Meal> TestRecipes()
         {
             List<Meal> results = new List<Meal>();
 

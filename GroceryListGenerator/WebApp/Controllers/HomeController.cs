@@ -15,7 +15,7 @@ namespace WebApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-       
+        private Package data = new DataAbstraction.Package();
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -40,7 +40,7 @@ namespace WebApp.Controllers
 
         public IActionResult Recipes()
         {
-            List<GroceryListGenerator.Meal> myList = Package.GetRecipes(User.Identity.Name);
+            List<GroceryListGenerator.Meal> myList = data.GetRecipes(User.Identity.Name);
             return View(myList);
         }
 
