@@ -15,15 +15,11 @@ namespace WebApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-       
+        private Package data;
 
         public HomeController(ILogger<HomeController> logger)
         {
-           GroceryListGenerator.Meal tempRecipe = new GroceryListGenerator.Meal("Bread", new List<GroceryListGenerator.Ingredient>
-            {
-                new GroceryListGenerator.Ingredient("Bread", 1.0, "Oz")
-            });
-
+            data = new Package();
             _logger = logger;
             
         }
@@ -40,7 +36,7 @@ namespace WebApp.Controllers
 
         public IActionResult Recipes()
         {
-            List<GroceryListGenerator.Meal> myList = Package.GetRecipes(User.Identity.Name);
+            List<GroceryListGenerator.Meal> myList = data.GetRecipes(User.Identity.Name);
             return View(myList);
         }
 
