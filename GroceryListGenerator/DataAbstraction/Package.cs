@@ -1,6 +1,7 @@
 ﻿using GroceryListGenerator;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,9 @@ namespace DataAbstraction
 {
     public class Package
     {
+        private static readonly string EndpointUri = ConfigurationManager.AppSettings["EndpointUri"];
+        private static readonly string PrimaryKey = ConfigurationManager.AppSettings["PrimaryKey"];
+        
         public void SaveRecipes(List<Recipe> recipes)
         {
 
