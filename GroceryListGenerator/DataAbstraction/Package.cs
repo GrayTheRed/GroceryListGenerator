@@ -19,29 +19,27 @@ namespace DataAbstraction
         private string containerId = "Recipes";
         private Database database;
         private Container container;
-        private string trial;
-
-        public List<Meal> meals;
+        private List<Meal> meals;
 
         public Package()
         {
             string whatevs = ConfigurationManager.AppSettings["EndpointUri"];
         }
 
-        public void SaveRecipes(List<Recipe> recipes)
+        public void SaveRecipe(List<Meal> recipes)
+        {
+            Task.WaitAll(SaveRecipeCosmos(recipes));
+        }
+
+        public async Task SaveRecipeCosmos(List<Meal> recipes)
         {
 
         }
 
         public List<Meal> GetRecipes(string id)
         {
-            Task.WaitAll(GetRecipesCosmos(id));
+            Task.WaitAll(GetCosmosData(id));
             return meals;
-        }
-
-        public async Task GetRecipesCosmos(string id)
-        {
-            await GetCosmosData(id);
         }
 
         public async Task GetCosmosData(string id)
