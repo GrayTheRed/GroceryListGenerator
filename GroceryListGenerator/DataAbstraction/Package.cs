@@ -38,48 +38,25 @@ namespace DataAbstraction
 
         }
 
-        public List<Meal> GetRecipes(string id)
+        public List<Recipe> GetRecipes(string id)
         {
-            Task.WaitAll(GetCosmosData(id));
-            return meals;
+            List<Recipe> results = new List<Recipe>();
+
+            results = TestRecipes();
+                        
+            return results;
         }
 
-        public async Task GetCosmosData(string id)
+        private List<Recipe> TestRecipes()
         {
-            //string EndpointUri = ConfigurationManager.AppSettings["EndpointUri"];
-            //string PrimaryKey = ConfigurationManager.AppSettings["PrimaryKey"];
-            cosmosClient = new CosmosClient(EndpointUri, PrimaryKey, new CosmosClientOptions() { ApplicationName = "GroceryListGenerator" });
-            container = cosmosClient.GetContainer(databaseId, containerId);
-            database = cosmosClient.GetDatabase(databaseId);
-            
-            var queryText = $"SELECT * FROM c where c.user = \"{id}\"";
-            QueryDefinition queryDefinition = new QueryDefinition(queryText);
-            FeedIterator<Meal> queryResultSetIterator = container.GetItemQueryIterator<Meal>(queryDefinition);
-            
-            meals = new List<Meal>();
-
-            while (queryResultSetIterator.HasMoreResults)
-            {
-                FeedResponse<Meal> currentResultSet = await queryResultSetIterator.ReadNextAsync();
-                foreach(Meal meal in currentResultSet)
-                {
-                    meals.Add(meal);
-                }
-            }
-        }
-
-
-
-        private List<Meal> TestRecipes()
-        {
-            List<Meal> results = new List<Meal>();
+            List<Recipe> results = new List<Recipe>();
 
             List<Ingredient> ingredientsA = new List<Ingredient>();
             Ingredient aFirst = new Ingredient("pasta", 3.5, "oz");
             Ingredient aSecond = new Ingredient("Sauce", 8.0, "oz");
             ingredientsA.Add(aFirst);
             ingredientsA.Add(aSecond);
-            Meal a = new Meal("Spaghetti", ingredientsA);
+            Recipe a = new Recipe("Spaghetti", ingredientsA);
             results.Add(a);
 
             return results;

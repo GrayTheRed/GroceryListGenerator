@@ -36,15 +36,14 @@ namespace WebApp.Controllers
 
         public IActionResult Recipes()
         {
-            List<GroceryListGenerator.Meal> recipes = data.GetRecipes(User.Identity.Name);
-
-            return View(recipes);
+            List<GroceryListGenerator.Recipe> myList = data.GetRecipes(User.Identity.Name);
+            return View(myList);
         }
 
         [HttpPost]
-        public ActionResult Recipes(GroceryListGenerator.Meal recipe)
+        public ActionResult Recipes(GroceryListGenerator.Recipe recipe)
         {
-            List<GroceryListGenerator.Meal> recipes = data.GetRecipes(User.Identity.Name);
+            List<GroceryListGenerator.Recipe> recipes = new List<GroceryListGenerator.Recipe>();
             recipes.Add(recipe);
             return View(recipes);
         }
