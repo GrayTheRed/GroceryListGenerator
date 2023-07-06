@@ -19,13 +19,13 @@ namespace WebApp.Controllers
 
         public HomeController(ILogger<HomeController> logger)
         {
-            data = new Package();
+            data = new Package();            
             _logger = logger;
             
         }
 
         public IActionResult Index()
-        {
+        {            
             return View();
         }
 
@@ -36,14 +36,15 @@ namespace WebApp.Controllers
 
         public IActionResult Recipes()
         {
-            List<GroceryListGenerator.Meal> myList = data.GetRecipes(User.Identity.Name);
-            return View(myList);
+            List<GroceryListGenerator.Meal> recipes = data.GetRecipes(User.Identity.Name);
+
+            return View(recipes);
         }
 
         [HttpPost]
         public ActionResult Recipes(GroceryListGenerator.Meal recipe)
         {
-            List<GroceryListGenerator.Meal> recipes = new List<GroceryListGenerator.Meal>();
+            List<GroceryListGenerator.Meal> recipes = data.GetRecipes(User.Identity.Name);
             recipes.Add(recipe);
             return View(recipes);
         }

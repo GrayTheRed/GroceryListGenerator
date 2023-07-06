@@ -12,8 +12,10 @@ namespace DataAbstraction
     public class Package
     {
         //TODO: Find out why config manager isn't working properly
-        private static readonly string EndpointUri = ConfigurationManager.AppSettings["EndpointUri"];
-        private static readonly string PrimaryKey = ConfigurationManager.AppSettings["PrimaryKey"];
+        //private static readonly string EndpointUri = ConfigurationManager.AppSettings["EndpointUri"];
+        //private static readonly string PrimaryKey = ConfigurationManager.AppSettings["PrimaryKey"];
+        private static readonly string EndpointUri = @"https://grocerylistgenerator.documents.azure.com:443/";
+        private static readonly string PrimaryKey = @"trrxRJ5ByVmEWliRR5EJzNSiSAvIZiOKy8iy7cWZ2TVI6mgL54TpWCKRXmihxbOvYTu9RzJQTuU8ACDbEDkK8g==";
         private CosmosClient cosmosClient;
         private string databaseId = "GroceryList";
         private string containerId = "Recipes";
@@ -44,8 +46,8 @@ namespace DataAbstraction
 
         public async Task GetCosmosData(string id)
         {
-            string EndpointUri = ConfigurationManager.AppSettings["EndpointUri"];
-            string PrimaryKey = ConfigurationManager.AppSettings["PrimaryKey"];
+            //string EndpointUri = ConfigurationManager.AppSettings["EndpointUri"];
+            //string PrimaryKey = ConfigurationManager.AppSettings["PrimaryKey"];
             cosmosClient = new CosmosClient(EndpointUri, PrimaryKey, new CosmosClientOptions() { ApplicationName = "GroceryListGenerator" });
             container = cosmosClient.GetContainer(databaseId, containerId);
             database = cosmosClient.GetDatabase(databaseId);
