@@ -14,25 +14,25 @@ namespace DataAbstraction
 
         }
 
-        public List<Meal> GetRecipes(string id)
+        public List<Recipe> GetRecipes(string id)
         {
-            List<Meal> results = new List<Meal>();
+            List<Recipe> results = new List<Recipe>();
 
             results = TestRecipes();
                         
             return results;
         }
 
-        private List<Meal> TestRecipes()
+        private List<Recipe> TestRecipes()
         {
-            List<Meal> results = new List<Meal>();
+            List<Recipe> results = new List<Recipe>();
 
             List<Ingredient> ingredientsA = new List<Ingredient>();
             Ingredient aFirst = new Ingredient("pasta", 3.5, "oz");
             Ingredient aSecond = new Ingredient("Sauce", 8.0, "oz");
             ingredientsA.Add(aFirst);
             ingredientsA.Add(aSecond);
-            Meal a = new Meal("Spaghetti", ingredientsA);
+            Recipe a = new Recipe("Spaghetti", ingredientsA);
             results.Add(a);
 
             return results;
